@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stiler/eivindsbil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="bilder/bil.png" id="logo">
+    <title>Eivinds Biler</title>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="top">
+            <img id="logo" class="svev" src="bilder/bil.png" onclick="start()">
+            <ul>
+                <li>Autoshow</li>
+                <li>Nyeste</li>
+                <li>Nyheter</li>
+                <li>Kontakt oss</li>
+            </ul>
+            <div class="svev">
+                <img id="kurv" src="bilder/image (11).png" onclick="kurv()">
+                <div id="ting"></div>
+            </div>
+        </div>
+        <div id="overskrift">Velg din bil</div>
+        <div id="biler">
+            <div class="box" onclick="porche()"><img src="bilder/Porsche-Logo.png" class="bil"></div>
+            <div class="box" onclick="ferarri()"><img src="bilder/main-qimg-383658c18330ee85eb0ccf09a615a30d.png" class="bil"></div>
+            <div class="box" onclick="egg()"><img src="bilder/580b57fcd9996e24bc43c486.png" class="bil"></div>
+            <div class="box" onclick="lambo()"><img src="bilder/Lamborghini_Logo.svg.png" class="bil"></div>
+        </div>
+        <div id="Porche" class="kjop">
+            <div class="bilde"><img src="bilder/Porsche-Logo.png" class="merke"></div>
+            <h2>Porche</h2>
+            <h4>Modell</h4>
+                <select id="carsP" class="cars">
+                <option value="ikke valgt - " >-</option>
+                <option value="718 Cayman - 1.100.000kr - 1100000" >718 Cayman</option>
+                <option value="718 Spyder RS - 2.500.000kr - 2500000" >718 Spyder RS</option>
+                <option value="911 GT3 RS - 3.600.000kr - 3600000">911 GT3 RS</option>
+                <option value="911 Carrera - 1.800.000kr - 1800000" >911 Carrera</option>
+                </select>
+            <h4>Farge</h4>
+            <input type="color" id="fargeP" class="fargeValg" value="#F2A71B">
+            <br>
+            <br>
+            <div id="prisP" class="pris">Pris: </div>
+            <br>
+            <button class="knapp" id="bestillKnapp" onclick="bestill()">Bestill</button>
+        </div>
+        <div id="ferarri" class="kjop">
+            <div class="bilde"><img src="bilder/main-qimg-383658c18330ee85eb0ccf09a615a30d.png" class="merke"></div>
+            <h2>Ferarri</h2>
+            <h4>Modell</h4>
+            <select id="carsF" class="cars">
+                <option value="ikke valgt - " >-</option>
+                <option value="SF90 Stradala - 5.200.000kr - 5200000" >SF90 Stradala</option>
+                <option value="LaFerarri - 14.000.000kr - 14000000" >LaFerarrir</option>
+                <option value="F40 - 10.600.000kr - 10600000">F40</option>
+                <option value="Monza SP2 - 35.000.000kr - 35000000" >Monza SP2</option>
+                </select>
+            <h4>Farge</h4>
+            <input type="color" id="fargeF" class="fargeValg" value="#F2A71B">
+            <br>
+            <br>
+            <div id="prisF" class="pris">Pris: </div>
+            <br>
+            <button class="knapp" id="bestillKnapp" onclick="bestill()">Bestill</button>
+        </div>
+        <div id="Koenisegg" class="kjop">
+            <div class="bilde"><img src="bilder/580b57fcd9996e24bc43c486.png" class="merke"></div>
+            <h2>Koenisegg</h2>
+            <h4>Modell</h4>
+                <select id="carsK" class="cars">
+                <option value="ikke valgt - " >-</option>
+                <option value="Gemera - 18.000.000kr - 1800000" >Gemera</option>
+                <option value="Jesko - 27.000.000kr - 27000000" >Jesko</option>
+                <option value="CC850 - 32.000.000kr - 32000000">CC850</option>
+                <option value="Agera RS - 20.000.000kr - 20000000" >Agera RS</option>
+                <option value="Regera - 17.000.000kr - 17000000" >Regera</option>
+                </select>
+            <h4>Farge</h4>
+            <input type="color" id="fargeK" class="fargeValg" value="#F2A71B">
+            <br>
+            <br>
+            <div id="prisK" class="pris">Pris: </div>
+            <br>
+            <button class="knapp" id="bestillKnapp" onclick="bestill()">Bestill</button>
+        </div>
+        <div id="Lamborghini" class="kjop">
+            <div class="bilde"><img src="bilder/Lamborghini_Logo.svg.png" class="merke"></div>
+            <h2>Lamborghini</h2>
+            <h4>Modell</h4>
+                <select id="carsL" class="cars">
+                <option value="ikke valgt - " >-</option>
+                <option value="Huracan STO - 3.900.000kr - 3900000" >Huracan STO</option>
+                <option value="Urus - 3.000.000kr - 3000000" >Urus</option>
+                <option value="Aventador - 5.100.000kr - 5100000">Aventador</option>
+                <option value="Countach - 27.000.000kr" >Countach</option>
+                </select>
+            <h4>Farge</h4>
+            <input type="color" id="fargeL" class="fargeValg" value="#F2A71B">
+            <br>
+            <br>
+            <div id="prisL" class="pris">Pris: </div>
+            <br>
+            <button class="knapp" id="bestillKnapp" onclick="bestill()">Bestill</button>
+        </div>
+        <div id="kvittot" class="kvittot">
+            <h2>Kvittering</h2>
+            <div id="kvittering" class="kvittering"></div>
+            <ul>
+                <li id="merkeS">Merke</li>
+                <li id="modellS">Modell</li>
+                <li id="fargeS">Farge</li>
+                <br>
+                <li id="prisS">Pris</li>
+                <br>
+            </ul>
+            <div id="ferdig">
+                <div><button class="doneKnapp" onclick="kurv()">Vis handlekurven</button></div>
+                <div><button class="doneKnapp" onclick="start()">Kjøp mer</button></div>
+            </div>
+        </div>
+        <div id="topp" class="topp"><h2>Totale ordere: </h2></div>
+        <div id="ordere">
+        <div id="bestillinger"></div>
+        <div id="bunnKnapper">
+            <button id="slett" class="bKnapp" onclick="slettLocalStorage()">Tøm</button>
+            <button id="betal" class="bKnapp">Betal</button>
+        </div>
+
+        </div>
+    <script src="script/EivindScript.js"></script>
+</body>
+</html>
