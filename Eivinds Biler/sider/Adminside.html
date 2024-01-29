@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../stiler/admin css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="../bilder/bil.png" id="logo">
+    <title>Adminside</title>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="top">
+            <ul>
+                <li onclick="start()"><a href="../index.html">Hovedside</a></li>
+            </ul>
+        </div>
+        <div id="antall">Ingen bestillinger</div>
+            <div id="tomKnapp"><button id="tom" onclick="tomBest()">Fjern alle</button>
+            <div class="sokebar"><input type="text" id="sokebar" placeholder="Ordrenummer"></div>
+        </div>
+        <div id="bestillinger"></div>
+    <script src="../script/adminScript.js"></script>
+</body>
+</html>

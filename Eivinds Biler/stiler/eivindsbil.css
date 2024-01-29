@@ -1,0 +1,508 @@
+
+
+body{
+    background-color: #A5A692;
+    margin: 0;
+}
+
+#top{
+    border-bottom: 2px black solid;
+    background-color: #19191f;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw ;
+    padding-right: 3vw ;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+#top ul{
+    display:flex;
+    color: #bfc5cd;
+    gap: 2vw;
+    list-style: none;
+    font-family: 'Caprasimo', serif;
+    font-size: 1.4vw;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#top ul a{
+    display:flex;
+    color: #bfc5cd;
+    gap: 2vw;
+    list-style: none;
+    font-family: 'Caprasimo', serif;
+    font-size: 1.4vw;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#top li{
+    position: relative;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+#top li a:visited{
+    display:flex;
+    color: #bfc5cd;
+    gap: 2vw;
+    list-style: none;
+    font-family: 'Caprasimo', serif;
+    font-size: 1.4vw;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#top li::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    background: #ecf7f6;
+    transition: all 0.3s ease;
+    color: #F2A71B;
+}
+
+#top li:hover::before{
+    background: #F2A71B;
+    width: 100%;
+}
+
+#kurv{
+    height: 4vw;
+    padding-left: 6vw;
+}
+
+#ting{
+    font-family: 'Caprasimo', serif;
+    font-size: 1vw;
+    border: #F2A71B 1px solid;
+    width: min-content;
+    height:max-content;
+    border-radius:20px;
+    background-color: #F2A71B;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 10.5vw;
+    top: -2vh;
+    padding: 5px;
+}
+
+#overskrift{
+    font-size: 4vw;
+    font-family: 'Caprasimo', serif;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+.bil{
+    width:100%;
+    height: 25vh;
+}
+
+.bilPreviw{
+    width:40vw;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    background-color: #bfb78fb6;
+    border-radius: 2vw;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    width: 50vw;
+}
+
+#bilerBilde{
+    display: none;
+
+}
+
+.skjul{
+    display: none;
+}
+
+.box{
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border-radius: 15px;
+    background-color: #4a4b4080;
+    padding: 2.5vw;
+    transition: transform 0.4s;
+}
+
+#biler{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    padding-top: 4vw;
+}
+
+.box:hover{
+    background-color: #F2A71B;
+    transform:scale( 1.05);
+}
+
+.merke{
+    width: 5vw;
+    display: flex;
+    position: absolute;
+
+}
+
+.bilde{
+    display: flex;
+    position: relative;
+    left: 0vw;
+    top: 0vh;
+}
+
+.kjop .bilde{
+    display: flex;
+    position: relative;
+    left: 0vw;
+    top: 0vh;
+}
+
+.svev{
+    scale: 100%;
+    transition: transform 0.2s;
+}
+
+.svev:hover {
+    transform: scale(1.05);
+}
+
+.kjop{
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    padding: 2vw;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    background-color: #bfb78fb6;
+    border-radius: 25px;
+    display: none;
+}
+
+h2{
+    font-size: 3vw;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 2vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+h4{
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+.cars{
+    background-color: #F2A71B;
+    height: 7vh;
+    border-radius: 5px;
+    padding: 1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1vw;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border: #000000 solid 1px;
+}
+
+.knapp{
+    background-color: #F2A71B;
+    height: 7vh;
+    width: 4vw;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border: #000000 solid 1px;
+    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1vw;
+}
+
+.knapp:hover{ 
+    background-color: #f2d21b;
+}
+
+.fargeValg{
+    height: 7vh;
+    width: 8vw;
+    border: #000000 solid 1px;
+    background-color: #F2A71B;
+    margin: 0;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.pris{
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+.kvittot{
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    padding: 2vw;
+    width: 20vw;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: #bfb78fb6;
+    border-radius: 25px;
+    display: none;
+    text-align: center;
+}
+
+#ferdig{
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.doneKnapp{
+    background-color: #F2A71B;
+    height: 7vh;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border: #000000 solid 1px;
+    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+
+}
+
+.doneKnapp:hover{ 
+    background-color: #f2d21b;
+}
+
+.kvittot ul{
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    list-style: none;
+    margin-left: -2.5vw;
+}
+
+#topp{
+    display: none;
+    font-size: 4vw;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.kvittering{
+    font-size: 2vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+
+#ordNr{
+    font-size: 3vw;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+.soppel{
+    height: 4vh;
+    margin-bottom: 0vh;
+    transition: transform 0.2s;
+}
+
+.soppel:hover{
+    transform: scale(1.1);
+}
+
+#slett{
+    background-color: #ff0000;
+    height: 7vh;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border: #000000 solid 1px;
+    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+#betal{
+    background-color: #48ff00;
+    height: 7vh;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border: #000000 solid 1px;
+    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+#bunnKnapper{
+    margin: auto;
+    display: none;
+    width: min-content;
+    margin-top: 5vh;
+    gap: 1vw;
+}
+
+#betal:hover{
+    background-color: #35bd00;
+}
+
+#slett:hover{
+    background-color: #be0000;
+}
+
+.nyDiv{
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    padding: 2vw;
+    width: fit-content;
+    margin-top: 5vh;
+    background-color: #bfb78fb6;
+    border-radius: 25px;
+    transition: transform 0.2s;
+    
+}
+
+#ordere{
+    width: 90vw;
+    margin: auto;
+    
+}
+
+#bestillinger{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    flex-wrap: wrap;
+}
+
+.nrDiv{
+    font-size: 2vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 1vh;
+    
+}
+
+.innholdDiv{
+    font-size: 1.1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+.sumDiv{
+    font-size: 1.1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 1vh;
+}
+
+.nyDiv:hover{
+    transform:scale(1.025);
+}
+
+#totalpris{
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#prisSum{
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+
+#utsjekk{
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    padding: 2vw;
+    width: 20vw;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: #bfb78fb6;
+    border-radius: 25px;
+    display: none;
+}
+
+.knappBunn{
+    background-color: #F2A71B;
+    height: 7vh;
+    width: 15vw;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    border: #000000 solid 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.knappBunn:hover{ 
+    background-color: #f2d21b;
+}
+
+#ferdigBunn{
+    display: none;
+    flex-direction: column;
+    border-radius: 2vw;
+    width: 40vw;
+    margin: auto;
+    padding: 2vw;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 4vw;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#ordrenummer{
+    font-size: 3vw;
+}
+
+#tilbake{
+    width: 10vw;
+    height: 8vh;
+    border-radius: 1vw;
+    margin-top: 5vh;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
+    background-color: #F2A71B;
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#tilbake:hover{
+    background-color: #f2d21b;
+}
+
+.fyll{
+    background-color: #F2A71B;
+    border-radius: 0.25vw;
+    height: 5vh;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9vw;
+    width: 10vw;
+
+
+}
+
+.fyll::placeholder{
+    color: #000000d2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} /** fjerner de to pilene når man skriver inn telefonmummeret sitt
